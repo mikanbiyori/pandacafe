@@ -1,0 +1,557 @@
+/*共通*/
+.page-box{
+    width: 100%;
+}
+
+.page-title{
+    font-size:calc(100vw/(1920 / 60));
+    color:#579444;
+    text-shadow:1px 1px 0 #393637, -1px -1px 0 #fcf7ee,
+    -1px 1px 0 #fcf7ee, 1px -1px 0 #fcf7ee,
+    0px 1px 0 #fcf7ee,  0-1px 0 #fcf7ee,
+    -1px 0 0 #fcf7ee, 1px 0 0 #fcf7ee;
+}
+
+/*英語をデフォルトで非表示にする*/
+.text-en{
+    display: none;
+}
+
+body {
+    overflow-x:hidden;
+    font-size:calc(100vw / (1920 / 13));
+    background-color: #fcf7ee;
+}
+
+label, input, textarea, select, option {
+    font-size:calc(100vw / (1920 / 26));
+}
+
+
+/*★1枚目★*/
+/*header-imgグラデーション*/
+.header-img-gradient{
+    width:100%;
+    height:calc(100vw / (1920 / 90));
+    background: linear-gradient( rgba(0, 0, 0, 0), rgb(252, 247, 238));
+    position: absolute;
+    top:calc((100vw / 1.8) - (100vw / (1920 / 90)));
+}
+
+/*画像を変更したら、該当箇所の「calc(100vw / ○○)」の数字を変える*/
+.header-img{
+    background-image:url(../img/top_image5.jpg);
+    background-size:cover;
+    height:calc(100vw / 1.8);
+}
+
+.header-logo{
+    background-size:cover;
+    background-image:url(../img/logo2.png);
+    position: absolute;
+    top:calc(100vw/(1920 / 10));
+    left:calc(100vw/(1920 / 10));
+    width:calc(100vw/(1920/200));
+    height:calc(100vw/(1920/200));
+}
+
+.top-menu-gradient{
+    width:calc(100vw/(1920/100));
+    height:calc(100vw/(1920/90));
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(57, 54, 55, .6));
+    position: fixed;
+    top: 0px;
+    right:calc(100vw/(1920/1050));
+}
+
+.top-menu-box{
+    position: fixed;
+    top:0vw;
+    right:0vw;
+    width:calc(100vw/(1920/1050));
+    height:calc(100vw/(1920/90));
+    opacity: 0.6;
+    background-color:#393637;
+    
+}
+
+.top-menu{
+    color:#FFFFFF;
+    font-size:calc(100vw/(1920 / 20));
+    position: fixed;
+    top:0vw;
+    right:0vw;
+    /*width:calc(100vw/(1920/1050));
+    height:calc(100vw/(1920/90));*/
+    list-style-type: none;
+}
+
+.top-menu li{
+    float:left;
+    margin:calc(100vw/(1920/30)) calc(100vw/(1920/80));
+
+}
+
+.top-menu li a{
+    text-decoration: none;
+    color: #fcf0da;
+    font-size: calc(100vw/(1920/25));
+}
+
+.smartphone-top-menu-list{
+    display: none;
+}
+
+.top-menu li a:hover{
+    cursor: pointer;
+    color: #549544;
+    text-shadow: 1px 1px 1px #fcf0da;
+    border-bottom: none;
+}
+
+.lang-con{
+    color:#fcf7ee;
+    font-size:calc(100vw/(1920 / 20));
+    position: absolute;
+    top:calc(100vw/(1920/115));
+    right:0;
+    width:calc(100vw/(1920/400));
+    height:calc(100vw/(1920/90));
+    list-style-type: none;
+}
+
+.lang-con li{
+    float:right;
+    padding:calc(100vw/(1920/2)) calc(100vw/(1920/8));
+}
+
+.lang-con li a{
+    text-decoration: none;
+    color: #fcf0da;
+    font-size: calc(100vw/(1920/25));
+}
+
+.lang-con li a:hover{
+    color: #549544;
+    text-shadow: 1px 1px 1px #fcf0da;
+    border-bottom: none;
+}
+
+.black-flower{
+    /*backgroundサイズとイメージで画像を指定*/
+    background-size:cover;
+    background-image:url(../img/flower1.png);
+    /*widthとhightで要素の表示サイズを指定*/
+    width:calc(100vw/(1920/1200));
+    height:calc(100vw/(1920/1200));
+    margin-right:calc(-100vw/(1920/420));
+    float:right;
+    transform:rotate(-45deg);
+}
+
+.flower-cut{
+    width: calc(100vw - (100vw - 100%));
+    height: calc(100vw / 1.5);
+    position: absolute;
+    top:0;
+    overflow: hidden;
+}
+
+.twitter-top-icon{
+    display: none;
+}
+
+/*2枚目*/
+
+.about-font{
+    font-size: calc(100vw/(1920 / 40));
+    color:#393637;
+    margin-top: calc(100vw/(1920/150));
+    margin-left: calc(100vw/(1920/100));
+}
+
+.cheff, .cheff-name {
+    font-weight:bold;
+}
+
+.about-font h2{
+    font-size:calc(100vw/(1920 / 30));
+    color:#393637;
+    margin-bottom: calc(100vw/(1920/100));
+}
+
+.panda-comment{
+    margin-left:calc(100vw/(1920/300));
+    float: left;
+}
+
+.cheff-comment{
+    font-size:calc(100vw/(1920 / 26));
+    color:#393637;
+    line-height: 1.7em;
+}
+
+.cheff{
+    font-size:calc(100vw/(1920 / 30));
+    color:#393637;
+
+}
+
+.about-panda{
+    background-size:cover;
+    background-image:url(../img/panda-tentyo-flame.png);
+    width:calc(100vw/(1920/390));
+    height:calc(100vw/(1920/350));
+    float:right;
+    margin-right:calc(100vw/(1920/300));
+}
+
+
+/*3枚目*/
+.page-box-news{
+    width: 100%;
+}
+
+.page-title-news{
+    font-size:calc(100vw/(1920 / 60));
+    color:#579444;
+    text-shadow:1px 1px 0 #393637, -1px -1px 0 #FFF,
+    -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+    0px 1px 0 #FFF,  0-1px 0 #FFF,
+    -1px 0 0 #FFF, 1px 0 0 #FFF;
+}
+
+.news-font{
+    font-size: calc(100vw/(1920 / 40));
+    color:#393637;
+    margin-top: calc(100vw/(1920/150));
+    margin-left: calc(100vw/(1920 / 100));
+}
+
+.news-font h2{
+    font-size:calc(100vw/(1920 / 30));
+    color:#393637;
+    margin-bottom: calc(100vw/(1920/130));
+}
+
+.twitter-style {
+    width: calc(100vw/(1920/700));
+    margin-left: calc(100vw/(1920 / 300));
+    padding: calc(100vw/(1920 / 5));
+}
+
+
+/*4枚目*/
+
+.menu-font{
+    font-size: calc(100vw/(1920 / 40));
+    color:#393637;
+    margin-top: calc(100vw/(1920/150));
+    margin-left: calc(100vw/(1920 / 100));
+}
+
+.menu-font h2{
+    font-size:calc(100vw/(1920 / 30));
+    color:#393637;
+    margin-bottom: calc(100vw/(1920/100));
+}
+
+.food-menu{
+    width: calc(100vw/(1920/400));
+    height:calc(100vw/(1920/700));
+    margin-left:calc(100vw/(1920/300));
+    border: solid calc(100vw/(1920 / 2)) #393637;
+    padding: calc(100vw/(1920 / 5));
+    border-radius: calc(100vw/(1920 / 15));
+    float: left;
+}
+
+.food-menu nav{
+    padding-top: calc(100vw/(1920 / 70));
+    text-align: center;
+    line-height: 5em;
+}
+
+.food-menu nav h3{
+    font-size: calc(100vw/(1920 / 30));
+}
+
+.food-menu nav ul{
+    font-size: calc(100vw/(1920 / 28));
+}
+
+.food-menu nav ul li{
+    font-size: calc(100vw/(1920 / 26));
+}
+
+.food-menu-line-spacing-adjustment{
+    display: none;
+}
+
+.menu-cafe-image{
+    background-image: url(../img/food-img.png);/*cafeの画像*/
+    background-size:cover;
+    width: calc(100vw/(1920/710));
+    height: calc(100vw/(1920/710));
+    float: right;
+    margin-right: calc(100vw/(1920/300));
+}
+
+/*5枚目*/
+
+.order-font{
+    font-size: calc(100vw/(1920 / 40));
+    color:#393637;
+    margin-top: calc(100vw/(1920/150));
+    margin-left: calc(100vw/(1920 / 100));
+}
+
+.order-font h2{
+    font-size:calc(100vw/(1920 / 30));
+    color:#393637;
+    margin-bottom: calc(100vw/(1920/100));
+}
+
+/*formの作成*/
+.form-box{
+    font-size:calc(100vw/(1920 / 30));
+    color:#393637;
+    margin-right:calc(100vw/(1920/200));
+    margin-left:calc(100vw/(1920/300));
+}
+
+.form-font{
+    margin-top: calc(100vw/(1920/150));
+    margin-bottom:calc(100vw/(1920 / 40));
+}
+
+.form-font span{
+    font-size: calc(100vw/(1920 / 30));
+}
+
+.label-box{
+    margin-top:calc(100vw/(1920 / 10)) ;
+
+}
+
+.label-line{
+    width: calc(100vw/(1920 / 400));
+    float: left;
+    margin-top:calc(100vw/(1920 / 40));
+}
+
+.label-line2{
+    width: calc(100vw/(1920 / 600));
+    float: left;
+    padding: 0.2em;
+    margin-left:calc(100vw/(1920 / 100));
+    margin-bottom:calc(100vw/(1920 / 40));
+}
+
+
+
+.label-line3{
+    width: calc(100vw/(1920 / 600));
+    height:calc(100vw/(1920 / 60));
+    float: left;
+    margin-left:calc(100vw/(1920 / 100));
+    margin-bottom:calc(100vw/(1920 / 40));
+    font-size: calc(100vw/(1920 / 30));
+}
+
+.label-comment{
+    width: calc(100vw/(1920 / 600));
+    height:calc(100vw/(1920 / 300));
+    float: left;
+    margin-left:calc(100vw/(1920 / 100));
+    margin-bottom:calc(100vw/(1920 / 40));
+}
+
+/*formに色付け1*/
+.label-box input[type='text'], input[type='email'], input[type='tel']{
+    font-family:sans-serif;
+    box-sizing: border-box;
+	padding: 0.2em 0.2em 0.2em 0.6em;
+    transition: 0.3s;
+    letter-spacing:calc(100vw/(1920 / 2));
+	border: 1px solid #393637;
+	border-radius:calc(100vw/(1920 / 5));
+}
+
+.label-line2[type='text']:focus {
+	border:1px solid #579444;
+	outline: none;
+    box-shadow: 0vw 0vw calc(100vw/(1920 / 10)) calc(100vw/(1920 / 1)) rgba(87,148,68, .5);
+}
+
+.label-line2[type='email']:focus {
+	border: 1px solid #579444;
+	outline: none;
+    box-shadow: 0vw 0vw calc(100vw/(1920 / 10)) calc(100vw/(1920 / 1)) rgba(87,148,68, .5);
+}
+
+.label-line2[type='tel']:focus {
+	border: 1px solid #579444;
+	outline: none;
+    box-shadow: 0vw 0vw calc(100vw/(1920 / 10)) calc(100vw/(1920 / 1)) rgba(87,148,68, .5);
+}
+
+/*formに色付け2*/
+select,option {
+    font-family:sans-serif;
+    box-sizing: border-box;
+    transition: 0.3s;
+    letter-spacing:calc(100vw/(1920 / 2));
+	border: 1px solid #393637;
+	border-radius:calc(100vw/(1920 / 5));
+  }
+
+select:focus {
+	border: 1px solid #579444;
+	outline: none;
+    box-shadow: 0vw 0vw calc(100vw/(1920 / 10)) calc(100vw/(1920 / 1)) rgba(87,148,68, .5);
+}
+
+option:focus {
+	border: 1px solid #579444;
+	outline: none;
+    box-shadow: 0vw 0vw calc(100vw/(1920 / 10)) calc(100vw/(1920 / 1)) rgba(87,148,68, .5);
+}
+
+/*formに色付け3*/
+textarea{
+    font-family:sans-serif;
+    box-sizing: border-box;
+	padding: 0.3em;
+    transition: 0.3s;
+    letter-spacing:calc(100vw/(1920 / 2));
+	border: 1px solid #393637;
+	border-radius:calc(100vw/(1920 / 5));
+}
+
+textarea:focus {
+	border: 1px solid #579444;
+	outline: none;
+    box-shadow: 0vw 0vw calc(100vw/(1920 / 10)) calc(100vw/(1920 / 1)) rgba(87,148,68, .5);
+}
+
+/*6枚目*/
+
+.contact-font{
+    font-size:calc(100vw/(1920 / 40));
+    color:#393637;
+    margin-top: calc(100vw/(1920/150));
+    margin-left:calc(100vw/(1920 / 100));
+}
+
+.contact-font h2{
+    font-size:calc(100vw/(1920 / 30));
+    color:#393637;
+    margin-bottom: calc(100vw/(1920/100));
+}
+
+.ggrmaps iframe{
+    margin-bottom: calc(100vw/(1920/130));
+    margin-left:calc(100vw/(1920/300));
+    width: calc(100vw/(1920/600));
+    height: calc(100vw/(1920/500));
+}
+
+/*会社情報*/
+.company-name{
+    font-size: calc(100vw/(1920 / 26));
+    float: right;
+    margin-top: calc(100vw/(1920/60));
+    margin-right: calc(100vw/(1920/200));
+    line-height: 1.7em;
+}
+
+.tel-nunber span,.open-hour span,.holiday span,.parking span{
+    float: left;
+}
+
+.blank-adjustment{
+    padding-left: calc(100vw/(1920/60));
+}
+
+.concept-name{
+    color:#579444;
+    font-size: calc(100vw/(1920 / 30));
+    font-weight: bold;
+}
+
+.cafe-name{
+    font-size: calc(100vw/(1920 / 28));
+    font-weight: bold;
+}
+
+
+/*7枚目*/
+.footer-gradient2{
+    width:100vw;
+    height:calc(100vw / (1920 / 90));
+    background: linear-gradient(rgb(255, 255, 255),rgba(0, 0, 0, 0),);
+    position: absolute;
+    bottom:calc((100vw / 1.8) - (100vw / (1920 / 90)));
+}
+
+.footer-box{
+    width:100%;
+    background-color:#393637;
+    font-size:calc(100vw/(1920 / 15));
+    text-align: center;
+    padding:calc(100vw/(1920/5));
+}
+
+.footer-logo{
+    background-size:cover;
+    background-image:url(../img/logo2.png);
+    width:calc(100vw/(1920/200));
+    height:calc(100vw/(1920/200));
+    margin: 0vw auto;
+}
+
+.copyright {
+    color:white;
+    margin-top: calc(100vw/(1920/15));
+}
+
+.clear {
+    clear:both;
+}
+
+.reservation-error{
+    display: none;
+    color: red;
+}
+
+
+
+
+
+
+#document.timeline-Widget {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+div.timeline-Widget {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.timeline {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+/* ここから下を追記 */
+.SandboxRoot.env-bp-970 .timeline-Tweet-text {
+    font-size: 10.5pt !important;
+    line-height: 14pt!important;
+}
+
+.SandboxRoot.env-bp-820 .timeline-Tweet-text {
+    font-size: 10.5pt !important;
+    line-height: 14pt!important;
+}
